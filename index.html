@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // birinci usul
+        function isPowerOfTwo(number) {
+            if (number <= 0) {
+                return false;
+            }
+            // Ədədin 2-nin qüvvəti olub-olmadığını yoxlayırıq
+            return (number & (number - 1)) === 0;
+        }
+
+        let eded = 4; // Ədədi burada dəyişdirin
+        if (isPowerOfTwo(eded)) {
+            alert(eded + " 2 nin qüvvətidir.");
+        } else {
+            alert(eded + " 2 nin qüvvəti deyil.");
+        }
+
+
+        // ikinci usul
+        //     let eded = parseFloat(prompt("ədəd "));
+        // while(ədəd>1){
+        //     if (ədəd%2!==0){
+        //         alert('Ədəd 2nin quvvəti deyil');
+        //         break;
+        //     } else{
+        //         ədəd/=2;
+        //     }
+        //     if(ədəd===1){
+        //         alert(' ədəd 2nin quvvətidir');
+        //     }
+
+
+    </script>
+</body>
+
+</html>
